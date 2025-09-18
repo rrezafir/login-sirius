@@ -1,0 +1,130 @@
+/* Container */
+.login-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Background Video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Overlay (gelap supaya form jelas) */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.login-card-wrap {
+  width: 95%;
+  display: flex;
+  justify-content: end;
+}
+
+/* Card Glassmorphism */
+.login-card {
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  padding: 50px 70px 50px 70px;
+  box-shadow: 0 8px 32px rgb(255, 255, 255, 0.5);
+  color: #272727;
+  text-align: left;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: -5px;
+}
+
+/* Form Styling */
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.login-logo {
+  width: 250px;            /* atur ukuran sesuai kebutuhan */
+  display: block;
+  margin-bottom: 10px;   /* center + jarak bawah */
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #272727;
+}
+
+.input-wrapper input {
+  border-radius: 8px;
+  outline: none;
+  padding: 14px 12px 12px 36px;
+  border: 1px solid #8f8f8f;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #272727;
+  width: 100%;
+}
+
+.login-card h2 {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #272727;
+}
+
+.login-card h4 {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: -30px;
+  color: #d7d7d7;
+}
+
+.login-card input::placeholder {
+  color: #d7d7d7;
+}
+
+.login-card button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #d03d3d;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s;
+  height: 52px;
+  margin-top: 20px;
+}
+
+.login-card button:hover {
+  background: #8d0b23;
+}
