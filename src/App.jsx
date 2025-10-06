@@ -17,36 +17,41 @@ function App() {
 
       {/* Login Card */}
       <div className="login-card-wrap">
-        <div className="login-card">
-          {/* Logo Sirius */}
+        <div className="login-card-container">
           <img
-            src="/logo-sirius.png"
+            src="/logo-sirius-white.png"
             alt="Sirius Logo"
             className="login-logo"
           />
+          <div className="login-card">
+            {/* Logo Sirius */}
 
-          <h2>Login to Sirius</h2>
-          <h4>Secure access to your Sirius account</h4>
+            <h2>Login to Sirius</h2>
+            <h4>Secure access to your Sirius account</h4>
 
-          <form className="form-login">
-            <div className="input-wrapper">
-              <span className="icon">
-                <LuUserRound />
-              </span>
-              <input type="text" placeholder="Username" />
-            </div>
+            <form className="form-login">
+              <div className="input-wrapper">
+                <span className="icon">
+                  <LuUserRound />
+                </span>
+                <input type="text" placeholder="Username" />
+              </div>
 
-            <div className="input-wrapper">
-              <span className="icon">
-                <TbLockPassword />
-              </span>
-              <input type="password" placeholder="Password" />
-            </div>
+              <div className="input-wrapper">
+                <span className="icon">
+                  <TbLockPassword />
+                </span>
+                <input type="password" placeholder="Password" />
+              </div>
 
-            <button type="submit">Login</button>
-          </form>
+              <button type="submit">Login</button>
+            </form>
+          </div>
         </div>
       </div>
+      
+        {/* SiriusLight text */}
+        <div className="siriuslight-text">siriuslight.id</div>
     </div>
   );
 }
