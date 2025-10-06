@@ -26,7 +26,7 @@ function App() {
           <div className="login-card">
             {/* Logo Sirius */}
 
-            <h2>Login to Sirius</h2>
+            <h2>Login</h2>
             <h4>Secure access to your Sirius account</h4>
 
             <form className="form-login">
