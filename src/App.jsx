@@ -47,11 +47,11 @@ function App() {
               <button type="submit">Login</button>
             </form>
           </div>
+          <div className="siriuslight-text">siriuslight.id</div>
         </div>
       </div>
-      
-        {/* SiriusLight text */}
-        <div className="siriuslight-text">siriuslight.id</div>
+
+      {/* SiriusLight text */}
     </div>
   );
 }
