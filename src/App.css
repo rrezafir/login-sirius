@@ -52,7 +52,7 @@
   box-shadow: 0 8px 32px rgba(255, 255, 255, 0.2);
   color: #272727;
   text-align: left;
-  width: 320px;
+  width: 370px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -68,36 +68,47 @@
 }
 .login-logo {
   position: absolute;
-  top: 30px;       /* jarak dari atas layar */
-  right: 60px;     /* jarak dari kanan layar */
-  width: 400px;    /* sesuaikan ukuran logo */
+  top: 30px; /* jarak dari atas layar */
+  right: 60px; /* jarak dari kanan layar */
+  width: 360px; /* sesuaikan ukuran logo */
   height: auto;
-  z-index: 10;     /* supaya di atas video & overlay */
+  z-index: 10; /* supaya di atas video & overlay */
 }
 
-.input-wrapper {
+/* .input-wrapper {
   position: relative;
   width: 100%;
+} */
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background-color: #fff;
+  padding: 12px;
+  height: 50px;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
-.input-wrapper .icon {
+/* .input-wrapper .icon {
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  font-size: 14px;
+  font-size: 16px;
   color: #272727;
-}
+} */
 
 .input-wrapper input {
-  border-radius: 8px;
   outline: none;
-  padding: 12px 12px 12px 34px;
-  border: 1px solid #8f8f8f;
+  border: none;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px;
   color: #272727;
   width: 100%;
+  height: 100%;
 }
 
 .login-card h2 {
@@ -128,7 +139,7 @@
   background: #d03d3d;
   color: white;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   transition: background 0.3s;
   height: 52px;
   margin-top: 5px;
