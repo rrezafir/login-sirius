@@ -154,7 +154,7 @@
 }
 
 /* --- RESPONSIVE --- */
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .login-card-wrap {
     justify-content: center;
   }
