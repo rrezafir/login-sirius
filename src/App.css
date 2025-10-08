@@ -153,16 +153,7 @@
 }
 
 /* --- RESPONSIVE --- */
-@media (max-width: 1440px) {
-  .login-card-wrap {
-    justify-content: flex-end; 
-    align-items: flex-start; 
-  }
-
-  .login-card-container {
-    align-items: flex-end; 
-  }
-
+@media (max-width: 1400px) {
   .login-logo {
     width: 20%;
   }
@@ -171,6 +162,8 @@
     width: 30%;
     max-width: 40rem;
     min-width: 20rem;
+    scale: 0.8;
+    margin: -40px;
   }
 
   .siriuslight-text {
@@ -178,3 +171,25 @@
   }
 }
 
+@media (max-width: 768px) {
+  .login-card-wrap {
+    justify-content: center;
+  }
+
+  .login-card-container {
+    align-items: center;
+  }
+
+  .login-logo {
+    width: 20%; /* kira-kira setara 160px, tapi fleksibel */
+  }
+
+  .login-card {
+    width: 30%; /* setara sekitar 300px di layar besar */
+    max-width: 40rem; /* pembatas agar tidak terlalu besar di layar besar */
+  }
+
+  .siriuslight-text {
+    font-size: 0.875rem; /* kira-kira setara 14px */
+  }
+}
